@@ -1,26 +1,26 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
+    <!-- <img src="./assets/logo.png"> -->
+    <!-- <h1>{{ msg }}</h1> -->
+    <div id="heb"></div>
 
   </div>
 </template>
 
 <script>
+import heb_draw from './draws/hierarchical_edge_bunding.js'
 export default {
   name: 'app',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  mounted(){
+      heb_draw()
+  },
+  methods: {
+
   }
 }
 </script>
