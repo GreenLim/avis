@@ -9,7 +9,7 @@
     		<div class="panel-heading">Visual Analytics View</div>
 
         <a href="detail.html" target="_blank" class="view-detail-btn btn btn-primary btn-success pull-right" type="button">View Details</a>
-    		<div id = "show-area"  class="panel-body" v-on:click="view_detail"></div>
+    		<div id = "show-area"  class="panel-body"></div>
 
       </div>
 
@@ -42,8 +42,7 @@
       },
       methods: {
         view_detail: function(){
-          window.location.href='hello.html';
-          setTimeout("javascript:location.href='hello.html'", 0);
+
         }
       },
       events: {
