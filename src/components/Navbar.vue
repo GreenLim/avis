@@ -1,16 +1,18 @@
 <template>
-  <nav class="uk-navbar uk-navbar-attached uk-margin-bottom">
-       <div class="uk-container uk-container-center">
-           <a href="/" class="uk-navbar-brand">Awesome</a>
-           <ul class="uk-navbar-nav">
-               <li data-url="blogs"><a href="/"><i class="uk-icon-home"></i> 日志</a></li>
-               <li><a target="_blank" href="#"><i class="uk-icon-book"></i> 教程</a></li>
-               <li><a target="_blank" href="#"><i class="uk-icon-code"></i> 源码</a></li>
-           </ul>
-           
-           </div>
-       </div>
-   </nav>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">aVis</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+      <button class="btn btn-danger navbar-btn">Import</button>
+      <button class="btn btn-danger navbar-btn">Export</button>
+    </div>
+  </nav>
 
 </template>
 

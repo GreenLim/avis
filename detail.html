@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html charset=UTF-8"/>
+    <title>avis</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/itemExplorer_100.css"
+
+  </head>
+  <body>
+
+    <script src="/static/js/jquery-3.1.1.min.js"></script>
+    <script src="/static/js/d3.v3.min.js"></script>
+    <script src="/static/js/itemExplorer_10.js"></script>
+
+    <script>
+      var myIEChart = itemExplorerChart("/static/dataset/items_0cld.csv").barWidth(10).barHeight(400);;
+      showChart();
+
+      function showChart() {
+        d3.select("body")
+          .append("div")
+          .attr("class", "chart")
+          .call(myIEChart);
+      }
+    </script>
+  </body>
+</html>

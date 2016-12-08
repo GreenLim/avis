@@ -1,10 +1,22 @@
 <template>
 
-  <div class="uk-container uk-container-center">
-        <div id = "show-area" class="uk-grid">
+    <div class="container-fluid text-center">
+    <div class="row content">
 
-        </div>
+      <div class="col-sm-12 text-left">
+        <hr>
+        <div class="panel panel-danger">
+    		<div class="panel-heading">Visual Analytics View</div>
+
+        <a href="detail.html" class="view-detail-btn btn btn-primary btn-success pull-right" type="button">View Details</a>
+    		<div id = "show-area"  class="panel-body" v-on:click="view_detail"></div>
+
+      </div>
+
+
+      </div>
     </div>
+  </div>
 
 </template>
 
@@ -18,7 +30,7 @@
         }
       },
       mounted(){
-        var myIEChart = itemExplorerChart("./static/dataset/items_0cld.csv").barWidth(16).barHeight(400);
+        var myIEChart = itemExplorerChart("./static/dataset/items_0cld.csv").barWidth(7).barHeight(400);
         showChart();
 
         function showChart() {
@@ -29,7 +41,10 @@
         }
       },
       methods: {
-
+        view_detail: function(){
+          window.location.href='hello.html';
+          setTimeout("javascript:location.href='hello.html'", 0);
+        }
       },
       events: {
 

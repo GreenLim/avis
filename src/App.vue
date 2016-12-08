@@ -2,10 +2,10 @@
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
     <!-- <h1>{{ msg }}</h1> -->
-    <!-- <Navbar></Navbar> -->
-    <!-- <MainBody></MainBody> -->
-    <!-- <FooterBar></FooterBar> -->
-    <GroceriesVis></GroceriesVis>
+    <Navbar></Navbar>
+    <MainBody></MainBody>
+    <FooterBar></FooterBar>
+    <!-- <GroceriesVis></GroceriesVis> -->
 
 
 
